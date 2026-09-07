@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/4b/a8/9e86292d2eb083b43622039d3f2c556ac6cd0bbbe7889eb60ea4a82462e9/levers9-0.1.265.tar.gz"
-  sha256 "7e80d4da7722a5e26c4a8a49528f168cb717a65b9562868c91b412268066bd83"
+  url "https://files.pythonhosted.org/packages/82/39/983a04409791653338096c69ce47914b5d11ac961b6e28f024e65529b794/levers9-0.1.266.tar.gz"
+  sha256 "df8dfeff634fb4b06bde10ba3a2f6ed2d71b3a1c6c99923e7a7e0c9347936061"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -138,7 +138,7 @@ class Levers9 < Formula
     sha256 "b2c665bc45b2b215bd7d7f039901b14b067da00f3a11e6640995fd58f2664822"
   end
 
-  resource "prompt-toolkit" do
+  resource "prompt_toolkit" do
     url "https://files.pythonhosted.org/packages/7d/ea/39b988c938f75cb75d7045b5c69f8bfed47ee2152c8837fb403de29d6fb8/prompt_toolkit-3.0.53.tar.gz"
     sha256 "9ec8a0ad96d5c56148b3f914aa79c1564c3fde5d2e6b876e7bc327e353cf8fa6"
   end
@@ -158,7 +158,7 @@ class Levers9 < Formula
     sha256 "51a9c5f7b2f8e636f04c6cada605d9b6a3bf1348fdf945a3d8869b19bba0ee08"
   end
 
-  resource "pydantic-core" do
+  resource "pydantic_core" do
     url "https://files.pythonhosted.org/packages/af/f9/8a06bea35ef8daf588f707784c973a7046e0034c8d8cfb08828eeffb8b75/pydantic_core-2.46.5.tar.gz"
     sha256 "10416c15b8839ecc4ef4d0885da76da6fd0f67333a0eb8aff6d93c4b8f2910fc"
   end
