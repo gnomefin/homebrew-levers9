@@ -73,4 +73,5 @@ jobs:
           git config user.email "hello@uselevers.com"
           git add Formula/levers9.rb
           git commit -m "levers9 ${{ steps.v.outputs.version }}: bottle"
-          git push origin HEAD:main
+          # the tap dir set up by setup-homebrew has no stored credentials: push with the job token
+          git push "https://x-access-token:${GH_TOKEN}@github.com/gnomefin/homebrew-levers9.git" HEAD:main
