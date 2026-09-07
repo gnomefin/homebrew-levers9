@@ -1,0 +1,74 @@
+name: bottle
+
+# Builds a bottle (prebuilt binary) for Formula/levers9.rb whenever the formula changes, uploads it to a
+# GitHub release of this repo, and writes the `bottle do` block into the formula. `brew install levers9`
+# then downloads the bottle instead of compiling 48 Python packages (rust for pydantic-core and
+# cryptography, C++ for grpcio) on every machine.
+on:
+  push:
+    branches: [main]
+    paths: [Formula/levers9.rb]
+  workflow_dispatch:
+
+concurrency: bottle
+
+jobs:
+  bottle:
+    runs-on: macos-15          # Apple silicon; add a macos-*-intel job with a merge step if x86_64 users appear
+    permissions:
+      contents: write
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Homebrew/actions/setup-homebrew@master
+
+      - id: v
+        name: which version, and does it already have a bottle
+        run: |
+          v=$(grep -o 'levers9-[0-9.]*\.tar\.gz' Formula/levers9.rb | head -1 | sed 's/levers9-//;s/\.tar\.gz//')
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          if grep -q "releases/download/levers9-$v\"" Formula/levers9.rb; then
+            echo "bottled=true" >> "$GITHUB_OUTPUT"; echo "levers9 $v already has a bottle"
+          else
+            echo "bottled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: tap this checkout and build from source
+        if: steps.v.outputs.bottled == 'false'
+        run: |
+          brew tap gnomefin/levers9 "$GITHUB_WORKSPACE"
+          brew install --build-bottle --verbose gnomefin/levers9/levers9
+          "$(brew --prefix)/bin/levers9" --help | head -3
+
+      - name: bottle it
+        if: steps.v.outputs.bottled == 'false'
+        run: |
+          mkdir -p bottles && cd bottles
+          brew bottle --json --no-rebuild \
+            --root-url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-${{ steps.v.outputs.version }}" \
+            gnomefin/levers9/levers9
+          # brew names the file levers9--VERSION.tag.bottle.tar.gz; the URL in the formula uses a single dash
+          for f in levers9--*.bottle.tar.gz; do mv "$f" "${f/levers9--/levers9-}"; done
+          ls -la
+
+      - name: upload the bottle to a release of this repo
+        if: steps.v.outputs.bottled == 'false'
+        run: |
+          tag="levers9-${{ steps.v.outputs.version }}"
+          gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --title "levers9 ${{ steps.v.outputs.version }} bottles" --notes "Prebuilt bottles for Formula/levers9.rb. Homebrew downloads these instead of building from source."
+          gh release upload "$tag" bottles/*.bottle.tar.gz --clobber
+
+      - name: write the bottle block into the formula and push
+        if: steps.v.outputs.bottled == 'false'
+        run: |
+          brew bottle --merge --write --no-commit bottles/*.json
+          cp "$(brew --repo gnomefin/levers9)/Formula/levers9.rb" Formula/levers9.rb
+          grep -A6 "bottle do" Formula/levers9.rb
+          git config user.name "levers9 release"
+          git config user.email "hello@uselevers.com"
+          git add Formula/levers9.rb
+          git commit -m "levers9 ${{ steps.v.outputs.version }}: bottle"
+          git push origin HEAD:main
