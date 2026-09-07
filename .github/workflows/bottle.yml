@@ -39,7 +39,8 @@ jobs:
       - name: tap this checkout and build from source
         if: steps.v.outputs.bottled == 'false'
         run: |
-          brew tap gnomefin/levers9 "$GITHUB_WORKSPACE"
+          # setup-homebrew already tapped this checkout (the tap dir points at $GITHUB_WORKSPACE)
+          brew tap-info gnomefin/levers9
           brew install --build-bottle --verbose gnomefin/levers9/levers9
           "$(brew --prefix)/bin/levers9" --help | head -3
 
@@ -65,7 +66,8 @@ jobs:
         if: steps.v.outputs.bottled == 'false'
         run: |
           brew bottle --merge --write --no-commit bottles/*.json
-          cp "$(brew --repo gnomefin/levers9)/Formula/levers9.rb" Formula/levers9.rb
+          tap=$(brew --repo gnomefin/levers9)
+          [ "$(cd "$tap" && pwd -P)" = "$(pwd -P)" ] || cp "$tap/Formula/levers9.rb" Formula/levers9.rb
           grep -A6 "bottle do" Formula/levers9.rb
           git config user.name "levers9 release"
           git config user.email "hello@uselevers.com"
