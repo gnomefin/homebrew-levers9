@@ -3,14 +3,9 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/94/81/94593a3c8cc19a123d638c29d964638937d0ff0c85457ef2d46daeaeab57/levers9-0.1.270.tar.gz"
-  sha256 "7d1109c91eda3d18fb94768c1ee9e6c190872c307aff3385113c5db1b3a3d073"
+  url "https://files.pythonhosted.org/packages/fa/5d/1cdde58be0d2594c3e6cad47840907f473bdbd547cf4d61cfacab7ca7521/levers9-0.1.271.tar.gz"
+  sha256 "d9e93ef2a078039fa521ae954e7cd9bb89d2650283d537e22b816bf96d8ac1b6"
   license "AGPL-3.0-only"
-
-  bottle do
-    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.1.270"
-    sha256 cellar: :any, arm64_sequoia: "c90918dc9ba233fd8ec373590537de4c81e24dc187e68040592d6ccbaefcea3a"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -134,8 +129,8 @@ class Levers9 < Formula
   end
 
   resource "multidict" do
-    url "https://files.pythonhosted.org/packages/1a/c2/c2d94cbe6ac1753f3fc980da97b3d930efe1da3af3c9f5125354436c073d/multidict-6.7.1.tar.gz"
-    sha256 "ec6652a1bee61c53a3e5776b6049172c53b6aaba34f18c9ad04f82712bac623d"
+    url "https://files.pythonhosted.org/packages/14/95/989c1b5ca17b72128661530cd6e351a0a83cda9a4d6c036e9ed976c18931/multidict-6.8.0.tar.gz"
+    sha256 "5cd4637ce76312ba1e05eb9c5193fec231f64fee0944e135fa1e951242355b37"
   end
 
   resource "paramiko" do
