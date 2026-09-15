@@ -3,14 +3,9 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/97/b1/b64df51b95422e2ed3617f3514f834fc244e14bbefac7ee4cd897fc55b13/levers9-0.2.2.tar.gz"
-  sha256 "fa5f1b590bd1ee51e2f2944a0c60800365f727575c2ea3bb58ca03eebd9511e2"
+  url "https://files.pythonhosted.org/packages/9a/8e/32e65992d6bacea01ec6e33d8fae1a14541fd735744ab37099089081146f/levers9-0.3.0.tar.gz"
+  sha256 "a966bf07347a5845da2f9c35f8bf4db7d1d4f747b785f20540d1ed8860e2aa5e"
   license "AGPL-3.0-only"
-
-  bottle do
-    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.2.2"
-    sha256 cellar: :any, arm64_sequoia: "5b8a38fbc60d348a62d19cf221487b4f46aff33087ff57bc60c7212d045fde32"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -89,8 +84,8 @@ class Levers9 < Formula
   end
 
   resource "grpcio" do
-    url "https://files.pythonhosted.org/packages/e2/b1/46539f5050d7c316a13396d185451f95084a74ddc68b12d818595bef0377/grpcio-1.83.1.tar.gz"
-    sha256 "9cee6fcbf2eb57c4b49451787bfa87be8efc1ca02a0b327dd4b54d44502e362b"
+    url "https://files.pythonhosted.org/packages/3f/4f/4435c0aae54657258d9cfcba78598f3d9e5fe4c82ff18d78558567b90faf/grpcio-1.84.0.tar.gz"
+    sha256 "19aaf172fc2edbefccce3f6e92c5150975dbe56c45744e9e87cf72ebdf85bfbe"
   end
 
   resource "grpclib" do
@@ -234,8 +229,8 @@ class Levers9 < Formula
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/f2/0f/3f86e61397dd33bf2ccf28188c40db6a740658aeebbbf6e7dbc101a1f487/uvicorn-0.52.4.tar.gz"
-    sha256 "73acfee47a0b133c5de13d219492d62d8a31e935f4fe6e41a232451a15379f86"
+    url "https://files.pythonhosted.org/packages/5d/ad/04bbb797c84fc1f26cb171f7394716f4865ffb8d8c5e1eef42565c2dfa6b/uvicorn-0.53.0.tar.gz"
+    sha256 "a9356f0cb89b3b8621529c5d5eebd69bfe154f4c3f68b4cf2de47e45fa855c2e"
   end
 
   resource "watchdog" do
