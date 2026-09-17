@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/9a/8e/32e65992d6bacea01ec6e33d8fae1a14541fd735744ab37099089081146f/levers9-0.3.0.tar.gz"
-  sha256 "a966bf07347a5845da2f9c35f8bf4db7d1d4f747b785f20540d1ed8860e2aa5e"
+  url "https://files.pythonhosted.org/packages/b7/3b/eec667db68eb871f7aac207f0395499c4b06817ab7afe455a0569090a826/levers9-0.4.0.tar.gz"
+  sha256 "c7db37ff1aeb654cbe31d71f722b7dbc231eeda457bf2adb2a5d965b70a57ad2"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -114,8 +114,8 @@ class Levers9 < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/5f/f7/abb373e5757eaec4b922b92f97ec8d6d7e057cf06778247604fbc4e7c3f3/idna-3.19.tar.gz"
-    sha256 "5e0811a4383b21dc5838069f801c4fb62113b7447663d2530d2bd6e77b49bf15"
+    url "https://files.pythonhosted.org/packages/f5/08/8eea9d4b8302028f3abb2c0813953f7aec26d33b7a8960ed760e65ff29fa/idna-3.20.tar.gz"
+    sha256 "a7db850025b95ded1eae8a46181a1a6c56c92c96f0e2b005d9ff8dc0210cab44"
   end
 
   resource "markdown-it-py" do
@@ -224,8 +224,8 @@ class Levers9 < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/53/0c/06f8b233b8fd13b9e5ee11424ef85419ba0d8ba0b3138bf360be2ff56953/urllib3-2.7.0.tar.gz"
-    sha256 "231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c"
+    url "https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz"
+    sha256 "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63"
   end
 
   resource "uvicorn" do
