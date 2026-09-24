@@ -3,14 +3,9 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/30/68/38f4f18625973fe7291811a974c53c805d872841377cc0682c0f02952f19/levers9-0.11.0.tar.gz"
-  sha256 "ad9035bbe157b9039c68281301ea9c1271ba40a99e828bf853f8d55134506b82"
+  url "https://files.pythonhosted.org/packages/9a/2e/736044cc3d7b6f636728ed51dc26918147e16043db0adcdefaf5192b7b68/levers9-0.11.1.tar.gz"
+  sha256 "3fbfebad3bfff35d6f986be0a7fbffec7fd6f3055e928fe326b0efaac63f44c2"
   license "AGPL-3.0-only"
-
-  bottle do
-    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.11.0"
-    sha256 cellar: :any, arm64_sequoia: "91df0b37a89d8d5df8705ef46a4d08073617c2da433080f98c85211aab45a661"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -184,8 +179,8 @@ class Levers9 < Formula
   end
 
   resource "pytz" do
-    url "https://files.pythonhosted.org/packages/fb/48/fb042503b6ca6cd271261dc559fd6432f7d8c713153e9ec5c591af4dfc1c/pytz-2026.3.post1.tar.gz"
-    sha256 "2211d3fcf9a797d3405cac96ac7f61d80e6a644f72a3309607282fe8a2010c5d"
+    url "https://files.pythonhosted.org/packages/b0/ed/fa23d28713004418bbf2407127f80f385bfb0bf4e677bef02c25c27b00ee/pytz-2026.4.tar.gz"
+    sha256 "464303645bafafd72418898368b2429458f709cf1eb6a15372fbcc396b64da63"
   end
 
   resource "PyYAML" do
