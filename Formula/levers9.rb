@@ -7,6 +7,11 @@ class Levers9 < Formula
   sha256 "f3df7fe306715b5a59d54d997f8cdc8aca9013f363325006702ec477d4121fbe"
   license "AGPL-3.0-only"
 
+  bottle do
+    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.13.2"
+    sha256 cellar: :any, arm64_sequoia: "45d3dabcc0dd51ecaa024c4f4fe6572d58df41610c9dd7830c91286fd5455d2c"
+  end
+
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "openssl@3"
