@@ -3,14 +3,9 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/9a/2e/736044cc3d7b6f636728ed51dc26918147e16043db0adcdefaf5192b7b68/levers9-0.11.1.tar.gz"
-  sha256 "3fbfebad3bfff35d6f986be0a7fbffec7fd6f3055e928fe326b0efaac63f44c2"
+  url "https://files.pythonhosted.org/packages/90/5c/e54617a9507e52e30c4f1c529c376e0ccf9636346fd7aa55b2a9f13b2392/levers9-0.12.0.tar.gz"
+  sha256 "1b95265b828a190e60087c64e91ec88627db11be9c6eec73ce452017a7014113"
   license "AGPL-3.0-only"
-
-  bottle do
-    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.11.1"
-    sha256 cellar: :any, arm64_sequoia: "63a9316627fd65bb999b669b789de2fffd2a9db3c8d37540e68b69f5c01126a1"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -234,8 +229,8 @@ class Levers9 < Formula
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/5d/ad/04bbb797c84fc1f26cb171f7394716f4865ffb8d8c5e1eef42565c2dfa6b/uvicorn-0.53.0.tar.gz"
-    sha256 "a9356f0cb89b3b8621529c5d5eebd69bfe154f4c3f68b4cf2de47e45fa855c2e"
+    url "https://files.pythonhosted.org/packages/da/34/30e9280707135d2cfc589dfff3cb796bd07a3aeb1a3e415ba09dd89d7bb4/uvicorn-0.54.0.tar.gz"
+    sha256 "a2e33cbfaa0306f8e6b0c13e0cb89d7d7a2da3e62b90c66e18c33d9807b28620"
   end
 
   resource "watchdog" do
