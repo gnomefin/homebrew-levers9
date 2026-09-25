@@ -3,14 +3,9 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/f0/a3/eef9b4b2b424ee20f0c6f7e2e5ac23fc43d5e2f864dcdbfcb564c92bdf20/levers9-0.12.3.tar.gz"
-  sha256 "902dd860a8510fb61b92e098088713d7e7738c438fe8d0224d12e1a5808562ee"
+  url "https://files.pythonhosted.org/packages/2d/b2/a5fbcc51c0a19242fff616cab769d8d0ddc31595532a763a89ca93559bf9/levers9-0.12.4.tar.gz"
+  sha256 "c97231a95b144e42e31205bfec761c2dfc79199e92ea45dd67ec9dba53e3887a"
   license "AGPL-3.0-only"
-
-  bottle do
-    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.12.3"
-    sha256 cellar: :any, arm64_sequoia: "6d3f0a753862e9d4dd269ffe443149e3ab4951fa2f549ce6860a3babd3e11098"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
