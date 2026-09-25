@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/b5/a3/ef1634548a2fd1b05c36d38890298ec428a99e1eb71fd63bbac5c429f80e/levers9-0.12.6.tar.gz"
-  sha256 "6ae98c01b74864d6c638f030523b21d85524d2f3b948ee86f70769e7e5567c58"
+  url "https://files.pythonhosted.org/packages/8f/60/d35e3021cf12df7b97d0cae061c3673e89ce3efeffc6d49349032fbbe965/levers9-0.12.7.tar.gz"
+  sha256 "ad31c5c48fe0831cb0584cc20e6d373038bd161454efa868efd7c4537ebbd7e2"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
