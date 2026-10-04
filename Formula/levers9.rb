@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/a3/37/70ce434f074b4bc224238a1e16a9c762d0417d573b212a868826e4bc7414/levers9-0.14.3.tar.gz"
-  sha256 "0105eccb30cb50deec5af761f038eebf072635b806ca82c6521311c3a07fd9cb"
+  url "https://files.pythonhosted.org/packages/e7/a4/eefa456c0358f2224d726aec5660011c2fd31c6c9cc167b1c0bf01c3bc31/levers9-0.14.4.tar.gz"
+  sha256 "36edc789c96e02963b965892365dcd6e070f595ae23a932109a6738c84c1c603"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -184,8 +184,8 @@ class Levers9 < Formula
   end
 
   resource "pytz" do
-    url "https://files.pythonhosted.org/packages/b0/ed/fa23d28713004418bbf2407127f80f385bfb0bf4e677bef02c25c27b00ee/pytz-2026.4.tar.gz"
-    sha256 "464303645bafafd72418898368b2429458f709cf1eb6a15372fbcc396b64da63"
+    url "https://files.pythonhosted.org/packages/14/21/d83d6ef28c4c912c4bb4d1dcf591f7b8c6bde87b9c66f9f454677314e16d/pytz-2026.5.tar.gz"
+    sha256 "fa23724b9c486543b9ff54a327ee7569ac83ade54bb9afd0fc18676620401c86"
   end
 
   resource "PyYAML" do
