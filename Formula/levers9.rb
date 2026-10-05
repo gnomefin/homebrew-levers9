@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/e7/a4/eefa456c0358f2224d726aec5660011c2fd31c6c9cc167b1c0bf01c3bc31/levers9-0.14.4.tar.gz"
-  sha256 "36edc789c96e02963b965892365dcd6e070f595ae23a932109a6738c84c1c603"
+  url "https://files.pythonhosted.org/packages/3d/28/ce3c438b3ec8f2e921318d727f9ebd6aa5470b8a8a1e8e82cf4bc5af4709/levers9-0.14.5.tar.gz"
+  sha256 "e09a538f8fad890450cc727bf2a70d454ce29c331ccc50454d21b8dc1f94749b"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -244,8 +244,8 @@ class Levers9 < Formula
   end
 
   resource "wcwidth" do
-    url "https://files.pythonhosted.org/packages/dc/ac/3a943d2792c9bb368aaa8b50121c0f778460ba2d7fbdc0a0366201d9e761/wcwidth-0.9.1.tar.gz"
-    sha256 "5823209b0d43af322ce698c689380d7c15ca31fa8e6e3be8459f27031bef0af5"
+    url "https://files.pythonhosted.org/packages/f0/b4/7830542634bb2d3e62aa3b586a72d5b3b6c91c3168929e7000ef3fed041d/wcwidth-0.9.2.tar.gz"
+    sha256 "ae0ef90b90f6af38b54f1fe6d58662ec33b3cb4b8391958a62416d654231727b"
   end
 
   resource "websocket-client" do
