@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/3d/28/ce3c438b3ec8f2e921318d727f9ebd6aa5470b8a8a1e8e82cf4bc5af4709/levers9-0.14.5.tar.gz"
-  sha256 "e09a538f8fad890450cc727bf2a70d454ce29c331ccc50454d21b8dc1f94749b"
+  url "https://files.pythonhosted.org/packages/f6/28/edb8d464c0d3a7734cc6e55fe4d5fbc393a68beaac23087477395e4a7334/levers9-0.14.6.tar.gz"
+  sha256 "99ff8fbbedf39abdaa4efbe67ad518d0646d5347783c72d4c75e1696024a2c5b"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -134,8 +134,8 @@ class Levers9 < Formula
   end
 
   resource "opentelemetry-api" do
-    url "https://files.pythonhosted.org/packages/1f/dc/e12c1fe1ed8a7b7149777127b1a0e12ce5bd5a81d97408bedc2128c260f5/opentelemetry_api-1.45.0.tar.gz"
-    sha256 "711ede81773c8025c2c03dac0450bc89f3d30aea6eabcc815c570d4e35a963f7"
+    url "https://files.pythonhosted.org/packages/2e/02/6e0ae9cc61bd3169d401077b507b3ebc344745171e1051ab430be012dcd9/opentelemetry_api-1.45.1.tar.gz"
+    sha256 "aa38ed19bcc084ba42782a73255b3582283eced7ad6dddbd6695189e69adfb75"
   end
 
   resource "paramiko" do
