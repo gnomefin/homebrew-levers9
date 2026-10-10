@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/79/82/e05ec143019376a802046a29583ed5a7dcb2a3661b27d17a4435c45d7ff7/levers9-0.14.8.tar.gz"
-  sha256 "5f7c300d1eb3f931b1ba6dce46ddcb37e521acc36669d6ede3e9bfa3f87c47b4"
+  url "https://files.pythonhosted.org/packages/fe/3d/8cae3233bfc0ea4612b3cb339c07b8b1ba795b3536c235bd56903b338916/levers9-0.14.9.tar.gz"
+  sha256 "655e4950a9914b042518c42a1daec5d3cd85e54b5defa37b1020826c885ef149"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -79,8 +79,8 @@ class Levers9 < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/56/4f/f7c30a73127e0a8bbffe788369b8359e530b01ae06e2757936fa35bc5e6d/fastapi-0.142.2.tar.gz"
-    sha256 "06366626f2e70576367714d9ab2fe8472e6c8456dba69b399f9f797ab5e92570"
+    url "https://files.pythonhosted.org/packages/0b/d7/6a8753ab6c1d432dc53703c3e1b92974a94531b7d047c32bbaae461ea844/fastapi-0.143.0.tar.gz"
+    sha256 "1acffe48206a80917cf7dac21992b5c44b25384e8902bf745c1fd9dabcf6c51f"
   end
 
   resource "grpcio" do
@@ -129,8 +129,8 @@ class Levers9 < Formula
   end
 
   resource "multidict" do
-    url "https://files.pythonhosted.org/packages/c4/64/642465a4827331a98ba4ae29f97658be25d1bdcb868872a2f78f7482b507/multidict-7.0.0.tar.gz"
-    sha256 "a7fcd089a0af2e0ef053c0d39c22c9ebf2434dddcb91034fd2f59ec99623788e"
+    url "https://files.pythonhosted.org/packages/f9/79/84ddb5ba16c4eb2c69c71db76ae3c579fe546e511f7170c7e27eedbab7c1/multidict-7.1.0.tar.gz"
+    sha256 "61a4e5d81b8d4e4ad61964b230129e7a2b914793d96289029078fc9009f074ec"
   end
 
   resource "opentelemetry-api" do
@@ -154,18 +154,18 @@ class Levers9 < Formula
   end
 
   resource "pycparser" do
-    url "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6/pycparser-3.0.tar.gz"
-    sha256 "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29"
+    url "https://files.pythonhosted.org/packages/da/a8/c5fdbeee588bb8ada9458774f43adf1bdd30bd59157055142183e769a024/pycparser-3.11.tar.gz"
+    sha256 "d875f09c3507d00e1aba0eecc6dcadc1352f30fff09dc6bff2f1c2935e97c2bc"
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/53/ef/fc4f868f4e2cee79f863883abffceff107875f569b848507319842d2a681/pydantic-2.13.5.tar.gz"
-    sha256 "51a9c5f7b2f8e636f04c6cada605d9b6a3bf1348fdf945a3d8869b19bba0ee08"
+    url "https://files.pythonhosted.org/packages/6b/fb/6e44b63b26efea1cec48c26d8362313310202ef5ed6e7a52f1669e64e2cd/pydantic-2.14.0.tar.gz"
+    sha256 "8a51a7aaddd60f55566d1f07bdd87b92b463903f39a8f26b71a06314cd1548ae"
   end
 
   resource "pydantic_core" do
-    url "https://files.pythonhosted.org/packages/af/f9/8a06bea35ef8daf588f707784c973a7046e0034c8d8cfb08828eeffb8b75/pydantic_core-2.46.5.tar.gz"
-    sha256 "10416c15b8839ecc4ef4d0885da76da6fd0f67333a0eb8aff6d93c4b8f2910fc"
+    url "https://files.pythonhosted.org/packages/e6/6d/196e8c819e0e934f35a1a33b3530396feadb0af4ca38fe9f995249e55794/pydantic_core-2.50.0.tar.gz"
+    sha256 "84d2d38f7d163c4dec292f379e9de1960c661795442aca6c90d706436cb3749e"
   end
 
   resource "Pygments" do
