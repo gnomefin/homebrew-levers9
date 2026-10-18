@@ -3,14 +3,9 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/28/e5/0992f4ef509bfc44bef2ff1e8fe143dcf84dd20237b9af85c1c545558cf8/levers9-0.15.0.tar.gz"
-  sha256 "9e5332bba8a9df23e0e3abc93ce4472b854c4c0c9f8a5ecba9468c893478c05a"
+  url "https://files.pythonhosted.org/packages/7d/28/1639e753eec094a5875cc30f3b7dcf7927d30926712991ffa26f945ef4b3/levers9-0.15.1.tar.gz"
+  sha256 "e7bc2adb5ac8c3adae6aa75dba8757e158b28a01e9ba5d001212f1185e21ca83"
   license "AGPL-3.0-only"
-
-  bottle do
-    root_url "https://github.com/gnomefin/homebrew-levers9/releases/download/levers9-0.15.0"
-    sha256 cellar: :any, arm64_sequoia: "9b727bf4feea537edb56da524129bdc112a5d4f22da077af13e652a874bdf896"
-  end
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
@@ -84,8 +79,8 @@ class Levers9 < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/96/16/52ca959230f9820660fd822f488f883d7dc42310716b4cc6d2a944835dcd/fastapi-0.143.1.tar.gz"
-    sha256 "4cafaab64df8534758bf0fce61947f5e27e6cd512798ccbbaad5425086c3b664"
+    url "https://files.pythonhosted.org/packages/38/d5/b0aeb0b303650ac87b0411de4aaf3f901b06042dcc3fb00f30b97b7ff585/fastapi-0.143.3.tar.gz"
+    sha256 "b9ab567ee57afb4454004ce04c889f8f0160ac47946b99795887cd6e88484848"
   end
 
   resource "grpcio" do
