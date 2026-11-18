@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/35/bd/ea90231303162284f87242cb336288260e2252485664c8a6e83713ebc03e/levers9-0.17.1.tar.gz"
-  sha256 "bd2bd69af67379a66809f1d338261290905113ee7eeff1e7179ea11e2465c65c"
+  url "https://files.pythonhosted.org/packages/b0/d7/3bb699d4b64f4e44342916752f61a74db471877fbdb38d803b7a81632c3d/levers9-0.17.2.tar.gz"
+  sha256 "3d43de86e09bcb9acb0db8d50fee91a33cf5cd5c552084ae47e98f5e60fa5ba0"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -79,13 +79,13 @@ class Levers9 < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/4e/7b/ae546e10f153fcf9a6afd8b9fe4730bdfeb8fdcb93178d54122973ef3f4c/fastapi-0.162.5.tar.gz"
-    sha256 "1ca37f64f61c99cebd38636e67525fb721c5e8c1169f07f2a35d73b0a63265d4"
+    url "https://files.pythonhosted.org/packages/bf/2f/d173f9bf5aba1285067ff47fd06b7e35bb922e3a1e52588fb7b31319d4ad/fastapi-0.163.2.tar.gz"
+    sha256 "e605c4c9b94be78b43aa8239a62ccf7b6684346cdc9e053633feab0ab21b87c7"
   end
 
   resource "grpcio" do
-    url "https://files.pythonhosted.org/packages/f0/03/f9e805772d4d01da2a1754a5f63c58601eacaf8f1e878729217188de7d16/grpcio-1.85.1.tar.gz"
-    sha256 "5f530287d5de5f7f66089ead81de44f6787162944dab3922efa65dfdff108a1d"
+    url "https://files.pythonhosted.org/packages/1e/48/8e14d92cca434b448c7018654da80f574aea3663f7d1f87ed044455c45c6/grpcio-1.85.3.tar.gz"
+    sha256 "8e18f15d1b09b8771edbf59d634b26cbe4903bc2577cb667264934a6655eb8b4"
   end
 
   resource "grpclib" do
