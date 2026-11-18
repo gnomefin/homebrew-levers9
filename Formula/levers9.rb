@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/34/a8/afd2589bb9ec4d657426fcd83e95cd3579d3b1a351d242f88aebf89f01f2/levers9-0.17.3.tar.gz"
-  sha256 "0c3dbe0e60c5c5868f69a23b5967674b22ba16bd90cd828b3de9d6a04c7fcc61"
+  url "https://files.pythonhosted.org/packages/fe/f7/f2ea4844322771c6b1dfaaee9eea755d03c276bca23b1c4ac065f63c9771/levers9-0.17.4.tar.gz"
+  sha256 "2eb7db72cdaf983d09e1286ac057b856efd1181d564ca5cdb50796d3f11b2057"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -13,8 +13,8 @@ class Levers9 < Formula
   depends_on "python@3.12"
 
   resource "annotated-doc" do
-    url "https://files.pythonhosted.org/packages/0f/6e/a61e86e43bb6039b31a33a8f5fba76fe1cdacf3661e7b9756d4ff1b28cdc/annotated_doc-0.0.6.tar.gz"
-    sha256 "7969bb69912085b2285849c0dcac0b4b374fd180c13cf10a87f284ffcf347bbf"
+    url "https://files.pythonhosted.org/packages/0b/7d/bdbf3062e5dae31da8b3de1e3269110beb93d268df4a7f6d22b167c6cee0/annotated_doc-0.0.7.tar.gz"
+    sha256 "0a30ef8f5322a4173720ae6712dc9a5e58f5a19868f3f167b4b5778db066c2b5"
   end
 
   resource "annotated-types" do
@@ -64,8 +64,8 @@ class Levers9 < Formula
 
   # wheel: the 3.1.2 sdist uses the retired [tool.flit.metadata] layout, which flit_core 4 refuses to build
   resource "cloudpickle" do
-    url "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl"
-    sha256 "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a"
+    url "https://files.pythonhosted.org/packages/a4/42/3b121b42b114919ffc6195a81c1c7065a465f62f46477fbdb87a07699e51/cloudpickle-3.1.3-py3-none-any.whl"
+    sha256 "1654f4f18e416447210a63c5c25a135d65a292156aa5fa519dfa4baf7726dddb"
   end
 
   resource "croniter" do
