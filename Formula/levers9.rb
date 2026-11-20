@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/fe/f7/f2ea4844322771c6b1dfaaee9eea755d03c276bca23b1c4ac065f63c9771/levers9-0.17.4.tar.gz"
-  sha256 "2eb7db72cdaf983d09e1286ac057b856efd1181d564ca5cdb50796d3f11b2057"
+  url "https://files.pythonhosted.org/packages/bc/54/715e186073330aa905a5099dfba5b23b3be041973b139586d127b439e92d/levers9-0.17.5.tar.gz"
+  sha256 "866b9831272fb9c5bb5d20c652a861becd87c863551aecfc9598ccf0db115210"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -79,8 +79,8 @@ class Levers9 < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/bf/2f/d173f9bf5aba1285067ff47fd06b7e35bb922e3a1e52588fb7b31319d4ad/fastapi-0.163.2.tar.gz"
-    sha256 "e605c4c9b94be78b43aa8239a62ccf7b6684346cdc9e053633feab0ab21b87c7"
+    url "https://files.pythonhosted.org/packages/27/f9/e7820ef181026fea100bde02d811445bf8e883362d7092b6928767147056/fastapi-0.165.0.tar.gz"
+    sha256 "dd94d4128319c1e1d50535ab023ab698f850a4d2822f0e181747b46f4ff3c0ab"
   end
 
   resource "grpcio" do
@@ -159,13 +159,13 @@ class Levers9 < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/b4/fc/1203d011145c98ddce3cd2f505bb54375ef8d43223053df6bfcf3c746f46/pydantic-2.14.3.tar.gz"
-    sha256 "1054f237f4d4733e5a30e1e2333bd33a2004ab9ab1510bd053a9a31bb48e232d"
+    url "https://files.pythonhosted.org/packages/8e/25/3ec212432a6031b65f043eaca9c820ddf87c0d0aa330023e64f79fcb5db6/pydantic-2.14.4.tar.gz"
+    sha256 "7c19f1d46f8accf55a4617a6116e1ade64840870f397b846a2c53fb9019414ba"
   end
 
   resource "pydantic_core" do
-    url "https://files.pythonhosted.org/packages/9c/0f/34f9ce4ba701dd0b815033ef94d99b56f66200e578ee6052aa3ac26f064e/pydantic_core-2.50.4.tar.gz"
-    sha256 "aead3b74b68396bf0feab5d57e050b730ded7df55853c1e048a87e00aaf033c6"
+    url "https://files.pythonhosted.org/packages/fb/63/0ceb815a7762576027ce388544c573d440574f95afb1302a2496b96db548/pydantic_core-2.50.5.tar.gz"
+    sha256 "1e740886083ff95530d694e6a3f09ed914bcf92a496d16acd307c6c3484fc36d"
   end
 
   resource "Pygments" do
@@ -214,8 +214,8 @@ class Levers9 < Formula
   end
 
   resource "typeguard" do
-    url "https://files.pythonhosted.org/packages/b4/de/4420db493fa8fc0856d5e5c1b159c63a323d2de2317babe36b01568928e8/typeguard-4.6.0.tar.gz"
-    sha256 "e7414f09111317de3e335de92cd397c5c0ca00b1cc1676de12e1d444a79b3f21"
+    url "https://files.pythonhosted.org/packages/67/2e/ff27b371f3262048aa7b2a391f655a333e75a7774a920d5fc9e257a47991/typeguard-4.6.1.tar.gz"
+    sha256 "d94fd3552c5feb6bada6e8bb1167d9916c08d7442141aeb041b847ba9bd1afb1"
   end
 
   resource "typing-inspection" do
