@@ -3,8 +3,8 @@ class Levers9 < Formula
 
   desc "CLI and SDK for running functions, endpoints and GPU jobs on levers9"
   homepage "https://uselevers.com"
-  url "https://files.pythonhosted.org/packages/14/da/663403fe8939ade549b647f929cce53e54ed129412cad9ef3ffa5580d8e4/levers9-0.18.0.tar.gz"
-  sha256 "88bb0765cc89a9b99147bef648956b86bcbc90c8432ac3ed6dabe1f6df7a61ca"
+  url "https://files.pythonhosted.org/packages/c9/6c/c9d86b625304707f3bcf7a3c0dc2a8ba1eaa19f71c502f65e0f4f2c8ca36/levers9-0.19.0.tar.gz"
+  sha256 "d0fb4d3f3c5843ee3c19fab01d9e8b25ef75570c89ebaf9fd9efe4325e336e8c"
   license "AGPL-3.0-only"
 
   depends_on "pkgconf" => :build
@@ -84,8 +84,8 @@ class Levers9 < Formula
   end
 
   resource "grpcio" do
-    url "https://files.pythonhosted.org/packages/1e/48/8e14d92cca434b448c7018654da80f574aea3663f7d1f87ed044455c45c6/grpcio-1.85.3.tar.gz"
-    sha256 "8e18f15d1b09b8771edbf59d634b26cbe4903bc2577cb667264934a6655eb8b4"
+    url "https://files.pythonhosted.org/packages/90/c7/37a4a43210ef2ecbf570a84e66c61c8a197db3c4057dc23b20263875f9af/grpcio-1.85.4.tar.gz"
+    sha256 "45c4efd77dbfbb92cfebe493518c7e2a97ef3f4da2673508f81214b7493d7cca"
   end
 
   resource "grpclib" do
